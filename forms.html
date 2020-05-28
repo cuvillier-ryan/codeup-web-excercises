@@ -19,6 +19,7 @@
         <textarea name="bio" id="bodyText" cols="30" rows="10">Tell us something about yourself.
         </textarea><br />
 
+        <section>
         <h2>How did you hear about us?</h2>
         <input type="radio"name="multipleChoice" value="Billboard" id="Billboard">
         <label for="Billboard">Billboard</label><br>
@@ -29,9 +30,11 @@
         <input type="radio"name="multipleChoice" value="Internet Advertisement" id="Internet Advertisement">
         <label for="Internet Advertisement">Internet Advertisement</label><br>
 
-        <input type="radio"name="multipleChoice" value="other" id="other">
+        <input type="radio"name="multipleChoice[]" value="other" id="other">
         <label for="other">Other</label><br>
+        </section>
 
+        <section>
         <label for="dropdown">Select your browser</label>
         <select name="dropdown" id="dropdown">
             <option value="Safari">Safari</option>
@@ -39,6 +42,7 @@
             <option value="Firefox">Firefox</option>
             <option value="Opera">Opera</option>
         </select><br>
+        </section>
 
         <button type="submit">Submit</button>
 </body>
