@@ -1,0 +1,14 @@
+/*Testing out this comment section*/
+
+h1  {
+    color : forestgreen;
+    text-decoration: overline;
+    background-color: palegoldenrod;
+}
+
+.fancy-heading {
+    color: midnightblue;
+}
+span {
+    color: red;
+}
