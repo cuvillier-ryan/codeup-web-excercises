@@ -1,0 +1,44 @@
+.fancy-header {
+    text-align: center;
+}
+
+h1,h2 {
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
+body {
+    background-image: url("../img/Retro.jpg");
+    background-size: cover;
+    background-color: palegoldenrod;
+    font-family: "American Typewriter";
+}
+
+#list-example ul {
+    list-style: upper-roman;
+}
+
+#list-example ol {
+    list-style: upper-alpha;
+}
+
+table {
+    width: 400px;
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    font-family: cursive;
+    text
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:visited {
+    color: red;
+}
+

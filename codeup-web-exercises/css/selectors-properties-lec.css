@@ -1,0 +1,21 @@
+h1, h2, h3, h4, h5, h6 {
+    color: red;
+
+}
+.fancy-heading {
+    color: dimgray;
+    background-color: aquamarine;
+}
+
+.other-class {
+    font-family: sans-serif;
+    border: 2px solid #eeff00
+}
+
+#fanciest-heading{
+    color: midnightblue;
+    background-color: burlywood;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+

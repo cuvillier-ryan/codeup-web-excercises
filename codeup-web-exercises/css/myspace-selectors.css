@@ -1,0 +1,34 @@
+h1 {
+    color: sienna;
+}
+
+
+body {
+    text-align: center;
+    background-color: greenyellow;
+    font-family: cursive;
+}
+
+header>p {
+    color: lightpink;
+}
+
+.fancy-header {
+    color: red;
+    font-size: 100px;
+    font-family: cursive;
+}
+
+.extra-small {
+    font-size: 10px;
+}
+
+.fancy-heading {
+    color: midnightblue;
+    text-decoration: underline;
+    font-family: "Al Nile";
+}
+
+#container {
+color: lightcoral;
+}
