@@ -1,0 +1,55 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+.message-info {
+    position: relative;
+    left: 40px;
+    width: calc(100% - 80px);
+    border: solid black 1px;
+    box-shadow: 1px 2px;
+    background-color: yellow;
+    padding: 6px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.message-success {
+    position: relative;
+    left: 40px;
+    width: calc(100% - 80px);
+    border: solid black 1px;
+    box-shadow: 1px 2px;
+    background-color: yellow;
+    padding: 6px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.message-warning {
+    position: relative;
+    left: 40px;
+    width: calc(100% - 80px);
+    border: solid black 1px;
+    box-shadow: 1px 2px;
+    background-color: red;
+    padding: 6px;
+    text-align: left;
+    box-sizing: border-box;
+}
+.message-error {
+    position: relative;
+    left: 40px;
+    width: calc(100% - 80px);
+    border: solid black 1px;
+    box-shadow: 1px 2px;
+    background-color: yellow;
+    padding: 6px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+

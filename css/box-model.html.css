@@ -1,0 +1,20 @@
+.box {
+    width: 50px;
+    height: 50px;
+    padding: 10px 11px 12px 13px;
+    border: 10px solid fuchsia;
+    /*You can add the style and color in one line in example above*/
+    /*border-style: solid;*/
+    /*border-color: #eeff00;*/
+    margin: 10 px;
+}
+
+#one {
+    background-color: darkslategray;
+    color: ghostwhite;
+}
+
+#two {
+
+}
+
