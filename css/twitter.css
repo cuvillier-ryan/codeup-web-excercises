@@ -71,38 +71,20 @@ a {
 .profile-form {
     line-height: 80px;
     float: right;
-    /*position: relative;*/
-    /*top: 1em;*/
 }
-
-.profile-details {
-    position: relative;
-    width: calc (25% -1em);
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: .5em;
-    margin-right: 5em;
+.profile-details, .timeline, .who-to-follow {
     float: left;
+    margin: 0 .5em;
+}
+.profile-details, .who-to-follow {
+    width: calc(25% - 1em);
 }
 
 .timeline {
-    position: relative;
-    width: calc (50% -1em);
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: .5em;
-    margin-right: 5em;
-    float: left;
+    width: calc(50% - 1em);
 }
-
 .who-to-follow {
-    position: relative;
-    width: calc (25% -1em);
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: .5em;
-    margin-right: 5em;
-    float: left;
+    width: calc(25% - 1em);
 }
 
 .container {
