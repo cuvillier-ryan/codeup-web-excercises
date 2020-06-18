@@ -29,7 +29,6 @@ alert("You may register: " + (isClassOpen && isScheduleOpen));
 let numberItemsPurchased = parseInt(prompt("How many items did you purchase?"));
 let isOfferExpired = confirm("Press OK if the offer is not expired.");
 let isPremiumMember = confirm("Press OK if you are a premium member");
-// isOfferExpired && (numberItemsPurchased > 2 || isPremiumMember);
 alert("Offer Applied: " + (isOfferExpired && (numberItemsPurchased > 2 || isPremiumMember)));
 
 
