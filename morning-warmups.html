@@ -6,236 +6,264 @@
 </head>
 <body>
 <h1>Morning Codeup Warmups</h1>
-    <script>
-        // Write a JavScript function that takes in a number and returns the number multiplied by 5.
+<script>
+    // Write a JavScript function that takes in a number and returns the number multiplied by 5.
 
-        function multiply (num) {
-            return num * 5;
-        }
-       //console.log(multiply(5));
+    function multiply(num) {
+        return num * 5;
+    }
 
-        function singHappyBirthday (whomever) {
-            // console.log("Happy Birthday to You,");
-            // console.log("Happy Birthday to You,");
-            // console.log("Happy Birthday Dear," + Hyperion);
-            // console.log("Happy Birthday to You!!!");
-        }
-        singHappyBirthday("Hyperion")
+    //console.log(multiply(5));
+
+    function singHappyBirthday(whomever) {
+        // console.log("Happy Birthday to You,");
+        // console.log("Happy Birthday to You,");
+        // console.log("Happy Birthday Dear," + Hyperion);
+        // console.log("Happy Birthday to You!!!");
+    }
+
+    singHappyBirthday("Hyperion")
 
     //Write a js function that will take in a number and from there count next 5 numbers.
 
-        function countUp5(num){
-            for (let i=0;i<5;i++) {
-             //   console.log(num+i); /
+    function countUp5(num) {
+        for (let i = 0; i < 5; i++) {
+            //   console.log(num+i); /
+        }
+    }
+
+    // countUp5(5);
+
+    function returnsSeven() {
+        return 7;
+    }
+
+    // console.log(returnsSeven());
+
+    // Write a JavaScript function that returns the length of a string passed through it.
+
+    //function stringLength(string) {
+    // return string.length;
+    //}
+
+    //console.log(stringLength("Howdy Codeup!"))
+
+    // Write a JavaScript function that returns the number of characters in a string passed through it.
+
+    //function numberOfCharactersInString(str) {
+    //  return stringLength(str);
+    // }
+    //console.log(numberOfCharactersInString("Howdy Codeup!"))
+
+    //Write a JavaScript function that will return the diameter of a circle with a radius of the circle passed through it.
+
+    //function diameterOfCircle (radius) {
+    // return radius * 2;
+    //}
+    // Write a JavaScript function that returns the square root of the number passed through it.
+
+    // function squareRoot(num) {
+    //return Math.sqrt(num);
+
+    //}
+
+    //  console.log(squareRoot(100));
+
+    //Write a function that returns the argument passed.
+
+    function returnArgument(param) {
+        return param;
+    }
+
+    // console.log(returnArgument("Hello Hyperion! Hope you had a great weekend!"));
+
+    // Write a JS function that returns a string representing the type of the argument passed through it.
+
+    function typeOfInput(input) {
+        return typeof input;
+    }
+
+    // console.log(typeOfInput(34));
+    // console.log(typeOfInput("Craig"));
+
+    //Write a JavaScript function that returns the boolean true if a number passed through it is even.
+
+    function isEven(num) {
+        return num % 2 === 0;
+    }
+
+    // console.log(isEven(44))
+    // console.log(isEven(31))
+
+    // console.log(2);
+    // console.log(4);
+    // console.log(6);
+    // console.log(8);
+    // console.log(10);
+    // console.log(12);
+    // console.log(14);
+    // console.log(16);
+    // console.log(18);
+    // console.log(20);
+
+    /* Write a function that takes 2 parameters. Starting at the first and counting by the second, will output 5
+    steps. I.e. countFromBy(10,5) results in:
+     */
+
+    // const countFromBy = function (num1, num2) {
+    //     console.log(num1);
+    //     console.log(num1 + num2);
+    //     console.log(num1 + 2 * num2);
+    //     console.log(num1 + 3 * num2);
+    //     console.log(num1 + 4 * num2);
+    // }
+    //
+    // countFromBy(10,5)
+
+    //Write a JS function called magic8Ball that takes in one number as a parameter. The return value be one of the following strings that correlate to the number passed in.
+
+    // function magic8ball(oneNumber) {
+    //     if (oneNumber === )
+    // }
+
+    // let lights = "on";
+    // let lightSwitch = function() {
+    //     if (lights === "on"); {
+    //         lights = "off";
+    //     else {
+    //         lights = "on";
+    //     }
+    // }
+
+    // console.log("lights are  " + lights);
+    // lightSwitch();
+    // console.log("lights are  " + lights);
+
+
+    // let times = 0;
+    //
+    // while (times < 10) {
+    //     times++;
+    //     console.log("We have done this " + times + " times.");
+    // }
+    //
+    // console.log("We are done!");
+
+
+    // let countTo10 = function () {
+    //     for (let i = 1; i <= 10; i++) {
+    //         if (i % 2 === 1) {
+    //             console.log(i + " is odd");
+    //         } else {
+    //             console.log(i + " is even");
+    //         }
+    //     }
+    // }
+    //
+    //         countTo10();
+    //
+    // let doubleChar = function(str) {
+    //     let  returnString = "";
+    //
+    //     for (var i = 0; i < str.length; i=1+2) {
+    //         returnString += str[1] + str[1];
+    //         console.log(returnString)
+    //     }
+    //
+    //     return returnString;
+    // }
+    //
+    //
+    //
+    //
+    // countTo10();
+
+    // function fizzBuzz(param) {
+    //     //creat an array
+    //     let array = [];
+    //     //begin the loop
+    //     for(i = 1; i <= param; i++);{
+    //         if(i % 3 === 0 && i % 5 === 0) {
+    //             array.push(i);
+    //         }
+    //         else if(i % 3 === 0){
+    //             array.push(i);
+    //         }
+    //         else if(i % 5 === 0){
+    //             array.push(i);
+    //         }
+    //     }
+    // //pring array
+    //     console.log(array);
+    //     //variable to handle array summation
+    //     var sum = array.reduce(function(a,b){return a + b;}, 0);
+    //
+    //
+    // }
+    let fizzBuzz = function (num) {
+        for (i = 1; i <= num; i++) {
+            if (i % 3 === 0 && i % 5 === 0) {
+                console.log("fizzbuzz");
+            } else if (i % 3 === 0) {
+                console.log('fizz')
+            } else if (i % 5 === 0) {
+                console.log("buzz")
+            } else {
+                console.log(i);
             }
         }
-        // countUp5(5);
+    }
+    // fizzBuzz(30);
+    //
+    // let fizzBuzz2 = function(num){
+    //     for (i = 1; i <= num; i++){
+    //         if(i % 3 === 0 && i % 5 === 0){
+    //
+    //         }
+    //     }
+    // }
 
-        function returnsSeven() {
-            return 7;
+
+    //Fibonacci Sequence workout
+
+    let fibonacci = function (num) {
+        let output = [0, 1];
+        let i = output.length;
+        while (i < num) {
+            output.push(output[output.length - 2] + output[output.length - 1]);
+            i++;
         }
-       // console.log(returnsSeven());
-
-        // Write a JavaScript function that returns the length of a string passed through it.
-
-      //function stringLength(string) {
-           // return string.length;
-      //}
-
-       //console.log(stringLength("Howdy Codeup!"))
-
-        // Write a JavaScript function that returns the number of characters in a string passed through it.
-
-        //function numberOfCharactersInString(str) {
-          //  return stringLength(str);
-       // }
-        //console.log(numberOfCharactersInString("Howdy Codeup!"))
-
-        //Write a JavaScript function that will return the diameter of a circle with a radius of the circle passed through it.
-
-        //function diameterOfCircle (radius) {
-           // return radius * 2;
-       //}
-        // Write a JavaScript function that returns the square root of the number passed through it.
-
-       // function squareRoot(num) {
-        //return Math.sqrt(num);
-
-       //}
-
-      //  console.log(squareRoot(100));
-
-        //Write a function that returns the argument passed.
-
-        function returnArgument (param) {
-            return param;
-        }
-
-       // console.log(returnArgument("Hello Hyperion! Hope you had a great weekend!"));
-
-        // Write a JS function that returns a string representing the type of the argument passed through it.
-
-        function typeOfInput(input) {
-            return typeof input;
-        }
-
-       // console.log(typeOfInput(34));
-       // console.log(typeOfInput("Craig"));
-
-        //Write a JavaScript function that returns the boolean true if a number passed through it is even.
-
-        function isEven(num) {
-            return num % 2 === 0;
-        }
-       // console.log(isEven(44))
-       // console.log(isEven(31))
-
-        // console.log(2);
-        // console.log(4);
-        // console.log(6);
-        // console.log(8);
-        // console.log(10);
-        // console.log(12);
-        // console.log(14);
-        // console.log(16);
-        // console.log(18);
-        // console.log(20);
-
-        /* Write a function that takes 2 parameters. Starting at the first and counting by the second, will output 5
-        steps. I.e. countFromBy(10,5) results in:
-         */
-
-        // const countFromBy = function (num1, num2) {
-        //     console.log(num1);
-        //     console.log(num1 + num2);
-        //     console.log(num1 + 2 * num2);
-        //     console.log(num1 + 3 * num2);
-        //     console.log(num1 + 4 * num2);
-        // }
-        //
-        // countFromBy(10,5)
-
-        //Write a JS function called magic8Ball that takes in one number as a parameter. The return value be one of the following strings that correlate to the number passed in.
-
-        // function magic8ball(oneNumber) {
-        //     if (oneNumber === )
-        // }
-
-        // let lights = "on";
-        // let lightSwitch = function() {
-        //     if (lights === "on"); {
-        //         lights = "off";
-        //     else {
-        //         lights = "on";
-        //     }
-        // }
-
-        // console.log("lights are  " + lights);
-        // lightSwitch();
-        // console.log("lights are  " + lights);
+        return output;
+    }
+    console.log(fibonacci(9));
 
 
-        // let times = 0;
-        //
-        // while (times < 10) {
-        //     times++;
-        //     console.log("We have done this " + times + " times.");
-        // }
-        //
-        // console.log("We are done!");
+    //function that receives a three digit number that returns a value in the 10 spot
+    // the to.Fixed method look to be the trick.
 
 
-
-// let countTo10 = function () {
-//     for (let i = 1; i <= 10; i++) {
-//         if (i % 2 === 1) {
-//             console.log(i + " is odd");
-//         } else {
-//             console.log(i + " is even");
-//         }
-//     }
-// }
-//
-//         countTo10();
-//
-// let doubleChar = function(str) {
-//     let  returnString = "";
-//
-//     for (var i = 0; i < str.length; i=1+2) {
-//         returnString += str[1] + str[1];
-//         console.log(returnString)
-//     }
-//
-//     return returnString;
-// }
-//
-//
-//
-//
-// countTo10();
-
-// function fizzBuzz(param) {
-//     //creat an array
-//     let array = [];
-//     //begin the loop
-//     for(i = 1; i <= param; i++);{
-//         if(i % 3 === 0 && i % 5 === 0) {
-//             array.push(i);
-//         }
-//         else if(i % 3 === 0){
-//             array.push(i);
-//         }
-//         else if(i % 5 === 0){
-//             array.push(i);
-//         }
-//     }
-// //pring array
-//     console.log(array);
-//     //variable to handle array summation
-//     var sum = array.reduce(function(a,b){return a + b;}, 0);
-//
-//
-// }
-        let fizzBuzz = function(num) {
-            for (i = 1; i<= num; i++){
-                if(i % 3 === 0 && i % 5 === 0) {
-                    console.log("fizzbuzz");
-                }else
-                if(i % 3 === 0){
-                    console.log('fizz')
-                }else
-                if(i % 5 === 0) {
-                    console.log("buzz")
-                }else {
-                    console.log(i);
-                }
-            }
-        }
-fizzBuzz(30);
-
-//Fibonacci Sequence workout
-
-        let fibonacci = function(num) {
-            let output = [0,1];
-            let i = output.length;
-            while (i<num) {
-                output.push(output[output.length - 2] + output[output.length - 1]);
-                i++;
-            }
-            return output;
-        }
-        console.log(fibonacci(9));
+    let return10 = function (x) {
+     return Number.parseFloat(x).toFixed(3);
+    }
 
 
+    console.log(return10(10))
+
+    //Write a function that takes in a three digit integer and returns the digit in the tens.
+    // I.e. isolateTensDigit(345) → 4
 
 
+    let isolateTensDigit = function(threeDigitNum){
+        threeDigitNum %= 100;
+        threeDigitNum /= 10;
+        threeDigitNum = Math.floor(threeDigitNum);
+        return threeDigitNum;
+    }
+
+    console.log(isolateTensDigit(345));
 
 
-
-
-
-    </script>
-
+</script>
 
 
 </body>
