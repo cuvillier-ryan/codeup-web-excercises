@@ -2,9 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>JQuery introduction</title>
 </head>
-<body>
-$END$
+<body id="codeup">
+<h1 id="tofu" class="h1Class">We are learning JQuery in 2020!</h1>
+<p id="pId" class="codeup">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias aliquid animi at
+    autem dicta distinctio
+    eius est et, ex expedita harum hic laboriosam minima porro praesentium quibusdam quis velit.</p>
+
+<ul id="ulId" class="">
+    <li id="liId">Jackson</li>
+    <li>Gibson</li>
+    <li>Epiphone</li>
+    <li>Ibanez</li>
+</ul>
+
+<div id="sushi" class="codeup">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eos incidunt modi
+    neque perspiciatis quam
+    quibusdam, quisquam tempora totam vitae. Aliquid aspernatur cumque earum eos facere molestias porro! Perspiciatis,
+    sunt?
+</div>
+
+<script src="js/jquery-2.2.4.js"></script>
+<script>
+    $(document).ready(function () {
+
+        var content = $("#tofu").html();
+        alert(content);
+
+        // $(".codeup").css("border", "1px solid red");
+
+        $("li").css("font-size", "20px");
+        $("li, p, h1").css('background-color', '#FF0');
+
+    });
+</script>
 </body>
 </html>
