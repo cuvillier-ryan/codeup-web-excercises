@@ -200,19 +200,19 @@
     //
     //
     // }
-    let fizzBuzz = function (num) {
-        for (i = 1; i <= num; i++) {
-            if (i % 3 === 0 && i % 5 === 0) {
-                console.log("fizzbuzz");
-            } else if (i % 3 === 0) {
-                console.log('fizz')
-            } else if (i % 5 === 0) {
-                console.log("buzz")
-            } else {
-                console.log(i);
-            }
-        }
-    }
+    // let fizzBuzz = function (num) {
+    //     for (i = 1; i <= num; i++) {
+    //         if (i % 3 === 0 && i % 5 === 0) {
+    //             console.log("fizzbuzz");
+    //         } else if (i % 3 === 0) {
+    //             console.log('fizz')
+    //         } else if (i % 5 === 0) {
+    //             console.log("buzz")
+    //         } else {
+    //             console.log(i);
+    //         }
+    //     }
+    // }
     // fizzBuzz(30);
     //
     // let fizzBuzz2 = function(num){
@@ -225,58 +225,87 @@
 
 
     //Fibonacci Sequence workout
-
-    let fibonacci = function (num) {
-        let output = [0, 1];
-        let i = output.length;
-        while (i < num) {
-            output.push(output[output.length - 2] + output[output.length - 1]);
-            i++;
-        }
-        return output;
-    }
-    console.log(fibonacci(9));
+    //
+    // let fibonacci = function (num) {
+    //     let output = [0, 1];
+    //     let i = output.length;
+    //     while (i < num) {
+    //         output.push(output[output.length - 2] + output[output.length - 1]);
+    //         i++;
+    //     }
+    //     return output;
+    // }
+    // console.log(fibonacci(9));
 
 
     //function that receives a three digit number that returns a value in the 10 spot
     // the to.Fixed method look to be the trick.
 
 
-    let return10 = function (x) {
-     return Number.parseFloat(x).toFixed(3);
-    }
-
-
-    console.log(return10(10))
+    // let return10 = function (x) {
+    //  return Number.parseFloat(x).toFixed(3);
+    // }
+    //
+    //
+    // console.log(return10(10))
 
     //Write a function that takes in a three digit integer and returns the digit in the tens.
     // I.e. isolateTensDigit(345) → 4
 
+    //
+    // let isolateTensDigit = function(threeDigitNum){
+    //     threeDigitNum %= 100;
+    //     threeDigitNum /= 10;
+    //     threeDigitNum = Math.floor(threeDigitNum);
+    //     return threeDigitNum;
+    // }
+    //
+    // console.log(isolateTensDigit(345));
+    //
 
-    let isolateTensDigit = function(threeDigitNum){
-        threeDigitNum %= 100;
-        threeDigitNum /= 10;
-        threeDigitNum = Math.floor(threeDigitNum);
-        return threeDigitNum;
+//
+// const power = function(base, exponent) {
+//     for(let count = 0; count < exponent; count ++) {
+//         result *= base;
+//     }
+//     return result;
+// };
+//
+//     console.log(power(2,10));
+//
+//
+// const addRole = function (){
+//
+// }
+
+        // Write a function that will return an array passed sorted in reverse alphabetical order, when passed an array of strings.
+        //     It should return null if any element within the array is not a string.
+
+    // let reverseArrayOfABS = function(arr) {
+    //     let array = []
+    //     for (i = 0; i <= arr.length; i++);{
+    //         array.push(i);
+    //         array.sort();
+    //         array.reverse();
+    //         if(not)
+    //     }
+    // };
+
+    function revAlphaArray(arr){
+        for(let i = 0; i < arr.length; i++){
+            if(typeof arr[i] !== "string") {
+                return null;
+            }
+        }
+        return arr.sort().reverse();
     }
 
-    console.log(isolateTensDigit(345));
+    console.log(revAlphaArray([0]));
+    console.log(revAlphaArray(["Prim", "Imar", "Rima", "Mary"]));
 
 
 
-const power = function(base, exponent) {
-    for(let count = 0; count < exponent; count ++) {
-        result *= base;
-    }
-    return result;
-};
 
-    console.log(power(2,10));
-
-
-const addRole = function (){
-
-}
 
 
 
