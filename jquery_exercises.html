@@ -26,15 +26,33 @@
 <script src="js/jquery-2.2.4.js"></script>
 <script>
     $(document).ready(function () {
+        // console.log("Ready to Go!")
+        // var content = $("#tofu").html();
+        // alert(content);
+        //
+        // // $(".codeup").css("border", "1px solid red");
+        //
+        // $("li").css("font-size", "20px");
+        // $("li, p, h1").css('background-color', '#FF0');
 
-        var content = $("#tofu").html();
-        alert(content);
 
-        // $(".codeup").css("border", "1px solid red");
+        //Code below for second JQuery exercise.
+        $("h1").click(function (e) {
+            $(this).css("background-color", "red");
+        });
 
-        $("li").css("font-size", "20px");
-        $("li, p, h1").css('background-color', '#FF0');
+        $('p').dblclick(function (e) {
+            $(this).css('font-size', "18px");
+        });
 
+        $('li').hover(
+            function () {
+                $(this).css("color", "red");
+            },
+            function(){
+                $(this).css('color', "black");
+            }
+        );
     });
 </script>
 </body>
