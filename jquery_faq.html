@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery FAQ List</title>
+    <style>
+
+
+
+    </style>
+</head>
+<body>
+<h1>NATIONAL PARK FAQs</h1>
+
+<dl>
+    <dt>Can I Bring My Pet to Yellowstone?</dt>
+    <dd>Yes, with some planning and a lot of restrictions,
+        you can bring your pet on vacation.</dd>
+    <br>
+
+    <dt>Can I Bring a Gun to Yellowstone?</dt>
+    <dd>Yes, you can carry a gun in Yellowstone. But it's illegal to fire it -
+        even in self defense. And once you exit Yellowstone, you could be in one of three states,
+        so it's important to know the law.</dd>
+    <br>
+
+    <dt>How Long Can I Stay in Big Bend National Park?</dt>
+    <dd>Visitors are welcome stay in the park up to 14 consecutive nights in either a front
+        or backcountry site, with a limit of 28 total nights in the park in a
+        calendar year.</dd>
+
+    <dt>Are campfires allowed in Big Bend National Park?</dt>
+    <dd>NO. Ground fires and wood fires are prohibited throughout Big Bend National Park.
+        Charcoal is allowed in grills in campgrounds. You may have a fire in a fire pan while on a river trip,
+        or use a containerized fuel stove for backpacking.</dd>
+    <br>
+
+    <dt>Can I use a BBQ grill with charcoal in Guadalupe Mountain National Park?</dt>
+    <dd>No. Open fires using wood or charcoal are prohibited anywhere within the park. You may cook with self-contained gas
+        r propane stoves only. There are grills available at the 3 state
+        rest areas located just outside the park.</dd>
+    <br>
+
+    <dt>What does it cost to camp at Guadalupe Mountain National Park?</dt>
+    <dd>The cost is $15 per night for an individual site. There is a self-pay, self-registration
+        station near the campground restrooms.</dd>
+    <br>
+
+    <dt>Are pets allowed in the campground at Guadalupe Mountain National Park?</dt>
+    <dd>Yes, but pets must be on leash. Pets are limted to the Pinery Trail ONLY. It takes you to the
+        Butterfield Stage Ruins and lasts about 3/4 of a mile. It is the trail directly behind the Visitor Center.</dd>
+    <br>
+
+    <dt>Morgawr</dt>
+    <dd>A sea serpent.</dd>
+
+    <dt>Owlman</dt>
+    <dd>A giant owl-like creature.</dd>
+
+    <dt>Owlman</dt>
+    <dd>A giant owl-like creature.</dd>
+</dl>
+
+
+
+<script src="js/jquery-2.2.4.js"></script>
+<script>
+    $( document ).ready(function() {
+       $('dd').addClass("invisible");
+
+       $('.invisible').on(function(){
+           $('dd').toggleClass('.invisible')
+       })
+    });
+
+
+
+</script>
+</body>
+</html>
+
+<!--//In a HTML structure, create a definition list containing-->
+<!--10 FAQs about national parks.-->
