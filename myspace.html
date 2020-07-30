@@ -1,39 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-    <title>Media Queries</title>
-    <link rel="stylesheet" href="css/myspace-selectors.css">
+    <meta charset="UTF-8">
+    <title>First Mapbox Map</title>
+    <!-- Mapbox CSS -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+    <!-- Custom CSS -->
+    <style>
+        #map {
+            /* the width and height may be set to any size */
+            width: 100%;
+            height: 700px;
+        }
+    </style>
 </head>
 <body>
-<div class="alert-info hidden-on-desktop">
-    <a href="#main">Skip to main content</a>
-</div>
-<h1>Company</h1>
-<nav>
-    <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
-<div class="header-img">
-    <img src="https://via.placeholder.com/900x400?" alt="">
-</div>
-<section id="main" class="main">
-    <h2>Main Section</h2>
-    <p>Amet lorem accusantium maxime quis iusto. Sit aliquid quidem at animi commodi, iusto harum, non. Accusantium sequi consectetur deleniti soluta tempora. Maxime maiores blanditiis veritatis vitae amet maiores sapiente in?</p>
-</section>
-<section class="sub-section">
-    <h2>Sub-section</h2>
-    <p>Amet optio quidem voluptatum neque esse at saepe, reiciendis quaerat architecto unde minima aspernatur harum cum totam non amet soluta. Ea quae odio harum magni ab vitae tenetur. Itaque numquam!</p>
-</section>
-<footer>
-    <p>(c) 2017 All rights reserved</p>
-    <div id="social-media-links">
 
-    </div>
-</footer>
+<h1>My First Mapbox Map!</h1>
+
+<!-- The HTML element that serves as the Mapbox container -->
+<div id='map'></div>
+
+<h3 id="reverseGeo"></h3>
+
+<!-- Mapbox JS -->
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+<script src="js/keys.js"></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+<!-- Custom JS -->
+<script>
+    mapboxgl.accessToken = mapboxKey;
+    let map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 10,
+        center: [-98.4916, 29.4252]
+    });
+
+
+    //This is the location for Tong's Thai
+    var marker = new mapboxgl.Marker()
+        .setLngLat([-98.448144, 29.486630])
+        .addTo(map);
+
+    //This is the location for GODAI
+    var marker2 = new mapboxgl.Marker()
+        .setLngLat([-98.491447, 29.428494])
+        .addTo(map);
+
+    //This is the location for Kimura
+    var marker3 = new mapboxgl.Marker()
+        .setLngLat([-98.514284, 29.541674])
+        .addTo(map);
+
+    //This is the Popup for Tong's Thai
+    var tongsThai = new mapboxgl.Popup()
+        .setHTML("<h3>Tong's Thai!!</h3>")
+        .addTo(map)
+
+    marker.setPopup(tongsThai);
+
+    //This is the popup for Godai
+    var godai = new mapboxgl.Popup()
+        .setHTML("<h3>Godai!!</h3>")
+        .addTo(map)
+
+    marker2.setPopup(godai);
+
+
+
+    map.on('click', 'places', function(e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.description;
+
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+        var kimura = new mapboxgl.Popup()
+            .setHTML("<h3>Kimura!!</h3>")
+            .addTo(map)
+
+        marker3.setPopup(kimura);
+    });
+
+
+
+
+
+
+
+
+
+    // //This is the popup for Kimura
+    // var kimura = new mapboxgl.Popup()
+    //     .setHTML("<h3>Kimura!!</h3>")
+    //     .addTo(map)
+    //
+    // marker3.setPopup(kimura);
+
+
+
+
+
+
+
+
+    // // Change the cursor to a pointer when the mouse is over the places layer.
+    // map.on('mouseenter', 'places', function() {
+    //     map.getCanvas().style.cursor = 'pointer';
+    // });
+    //
+    // // Change it back to a pointer when it leaves.
+    // map.on('mouseleave', 'places', function() {
+    //     map.getCanvas().style.cursor = '';
+    // });
+    // //
+    // document.addEventListener("keyup", function(e) {
+    //     if (e.key === " ") {
+    //         let rrMark = new mapboxgl.Marker()
+    //             .setLngLat([-97.6789, 30.5083])
+    //             .addTo(map);
+    //     }
+    // });
+
+    geocode("1615 Waverly Ave, San Antonio, TX 78201", mapboxKey).then(function(data) {
+        console.log(data);
+        let whatever =new mapboxgl.Marker().setLngLat(data).addTo(map);
+
+        let whatever1 = new mapboxgl.Popup()
+            .setHTML("<h3>FUN!!!!!!</h3>")
+            .addTo(map)
+
+        whatever.setPopup(whatever1);
+    });
+
+    reverseGeocode({lat: 51.2194, lng: 4.4025}, mapboxKey).then(function(data) {
+        console.log(data);
+        document.querySelector("#reverseGeo").innerHTML = data;
+    })
+
+
+</script>
 </body>
 </html>

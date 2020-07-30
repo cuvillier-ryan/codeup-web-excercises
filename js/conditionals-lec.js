@@ -245,22 +245,22 @@ if (isAdmin) {
 
 
 // =============== SWITCH STATEMENT ================
-//SWITH STATEMENT SYNTAX
-// var num = 0;
-//
-// switch (num) {
-//     case 0:
-//         console.log("You turned on the lights")
-//         // actual code
-//         break;
-//     case 1:
-//         console.log("You turned off the lights")
-//         //actual code
-//         break;
-//     default:
-//         console.log("default case")
-//         //default or 'else' case
-// }
+//SWITCH STATEMENT SYNTAX
+var num = 0;
+
+switch (num) {
+    case 0:
+        console.log("You turned on the lights")
+        // actual code
+        break;
+    case 1:
+        console.log("You turned off the lights")
+        //actual code
+        break;
+    default:
+        console.log("default case")
+        //default or 'else' case
+}
 
 
 

@@ -40,7 +40,7 @@
         var subHeader = document.getElementById("sub-header");
 
         // TODO: Set the text color of subHeader to blue
-        subHeader.style.color = "blue";
+        // subHeader.style.color = "blue";
         // TODO: Uncomment the next line and get all list items
         var listItems = document.getElementsByTagName("li");
 
@@ -59,10 +59,10 @@
         // TODO: Set text color of li with dbid = 1 to blue
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        var subParagraphs = document.getElementsByClassName("sub-paragraph");
+        // var subParagraphs = document.getElementsByClassName("sub-paragraph");
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-        subParagraphs[0].innerHTML = "Mission Accomplished!";
+        // subParagraphs[0].innerHTML = "Mission Accomplished!";
 
 
         document.getElementById("btn-1").addEventListener("click", function(){
@@ -70,11 +70,11 @@
         });
 
         document.getElementById("btn-2").addEventListener("click", function(){
-            document.getElementById("main-header").innerHTML = "JavaScript is Super Cool!";
+            document.getElementById("sub-header").style.color = "blue";
         });
 
         document.getElementById("btn-3").addEventListener("click", function(){
-            document.getElementById("main-header").innerHTML = "JavaScript is Awesome!";
+            document.getElementsByClassName("sub-paragraph").innerHTML = "Mission Accomplished!";
         });
 
         document.getElementById("btn-4").addEventListener("click", function(){
