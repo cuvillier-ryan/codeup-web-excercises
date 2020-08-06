@@ -358,47 +358,66 @@
     // }
     // console.log(fizzBuzz());
 
-    var hamsters = [
-        {
-            name: "Hamtaro",
-            heightInMM: 86,
-            fur: ['orange', 'white'],
-            gender: "male",
-            dateOfBirth: "August 6"
-        } , {
-            name: "Bijou",
-            heightInMM: 75,
-            fur: ['white'],
-            gender: "female",
-            dateOfBirth: "July 10"
-        } , {
-            name: "Oxnard",
-            heightInMM: 100,
-            fur: ['grey', 'white'],
-            gender: "male",
-            dateOfBirth: "May 3"
-        } , {
-            name: "Boss",
-            heightInMM: 120,
-            fur: ['brown', 'white'],
-            gender: "male",
-            dateOfBirth: "Spetember 21"
-        } , {
-            name: "Snoozer",
-            heightInMM: 85,
-            fur: ['brown', 'white', "pink"],
-            gender: "male",
-            dateOfBirth: "January 14"
-        }
-    ];
+    // var hamsters = [
+    //     {
+    //         name: "Hamtaro",
+    //         heightInMM: 86,
+    //         fur: ['orange', 'white'],
+    //         gender: "male",
+    //         dateOfBirth: "August 6"
+    //     } , {
+    //         name: "Bijou",
+    //         heightInMM: 75,
+    //         fur: ['white'],
+    //         gender: "female",
+    //         dateOfBirth: "July 10"
+    //     } , {
+    //         name: "Oxnard",
+    //         heightInMM: 100,
+    //         fur: ['grey', 'white'],
+    //         gender: "male",
+    //         dateOfBirth: "May 3"
+    //     } , {
+    //         name: "Boss",
+    //         heightInMM: 120,
+    //         fur: ['brown', 'white'],
+    //         gender: "male",
+    //         dateOfBirth: "Spetember 21"
+    //     } , {
+    //         name: "Snoozer",
+    //         heightInMM: 85,
+    //         fur: ['brown', 'white', "pink"],
+    //         gender: "male",
+    //         dateOfBirth: "January 14"
+    //     }
+    // ];
 
-    const biggestHamster = hamsters.reduce((bigHamster, hamHam) => {
-        if(hamHam.heightInMM > bigHamster.heightInMM){
-            return hamHam;
-        } else {
-            return bigHamster;
-        }, {height}
-    } )
+    // const biggestHamster = hamsters.reduce((bigHamster, hamHam) => {
+    //     if(hamHam.heightInMM > bigHamster.heightInMM){
+    //         return hamHam;
+    //     } else {
+    //         return bigHamster;
+    //     }, {height}
+    // } )
+
+    $("#delete").on('click', (function (id) {
+
+            $.ajax({
+                type: 'DELETE',
+                url: '/api/movies',
+                success: function () {
+                    $( "movie" ).remove();
+                    alert("You have deleted successfully")
+                },
+                error: function () {
+                    alert('error deleting movie');
+                }
+            })
+        })
+    );
+
+
+
 
 </script>
 

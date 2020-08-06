@@ -3,3 +3,4 @@
 .DS_STORE
 confessions.txt
 keys.js
+node_modules
