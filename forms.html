@@ -5,36 +5,38 @@
     <title>Register With Us</title>
 </head>
 <body>
-    <form method="POST" action="https://hookb.in/9X3KnO0BQES7gL6LMJNa">
-        <label for="email">Enter your email address</label>
-        <input type="text" name="email" id="email" placeholder="Enter email address here">
+<form method="POST" action="https://hookb.in/9X3KnO0BQES7gL6LMJNa">
 
-        <br />
-        <label for="password">Enter Your Password</label>
-        <input type="password" name="pw" id="password" placeholder="Enter password here"/>
-        <br />
+    <section>
+        <label for="email">Email Address:</label>
+        <input type="text" name="email" id="email" placeholder="Enter email address"><br>
 
-        <label for="bodyText">Bio</label>
-        <br />
+
+        <label for="password">Password:</label>
+        <input type="password" name="pw" id="password" placeholder="Enter password"/><br>
+
+        <label for="bodyText">Bio</label><br>
         <textarea name="bio" id="bodyText" cols="30" rows="10">Tell us something about yourself.
-        </textarea><br />
+        </textarea><br/>
+    </section>
 
-        <section>
-        <h2>How did you hear about us?</h2>
-        <input type="radio"name="multipleChoice" value="Billboard" id="Billboard">
-        <label for="Billboard">Billboard</label><br>
+    <h2>How did you hear about us?</h2>
+    <section>
+        <label for="Billboard">Billboard</label>
+        <input type="radio" name="multipleChoice" value="Billboard" id="Billboard"><br>
 
-        <input type="radio"name="multipleChoice" value="Radio Advertisement" id="Radio Advertisement">
-        <label for="Billboard">Radio Advertisement</label><br>
+        <label for="Radio Advertisement">Radio Advertisement</label>
+        <input type="radio" name="multipleChoice" value="Radio Advertisement" id="Radio Advertisement"><br>
 
-        <input type="radio"name="multipleChoice" value="Internet Advertisement" id="Internet Advertisement">
-        <label for="Internet Advertisement">Internet Advertisement</label><br>
+        <label for="Internet Advertisement">Internet Advertisement</label>
+        <input type="radio" name="multipleChoice" value="Internet Advertisement" id="Internet Advertisement"><br>
 
-        <input type="radio"name="multipleChoice[]" value="other" id="other">
-        <label for="other">Other</label><br>
-        </section>
+        <label for="other">Other</label>
+        <input type="radio" name="multipleChoice[]" value="other" id="other">
+    </section>
+    <br>
 
-        <section>
+    <section>
         <label for="dropdown">Select your browser</label>
         <select name="dropdown" id="dropdown">
             <option value="Safari">Safari</option>
@@ -42,8 +44,9 @@
             <option value="Firefox">Firefox</option>
             <option value="Opera">Opera</option>
         </select><br>
-        </section>
+    </section>
 
-        <button type="submit">Submit</button>
+    <button type="submit">Submit</button>
+</form>
 </body>
 </html>
