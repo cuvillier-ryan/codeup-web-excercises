@@ -1,24 +1,35 @@
-* {
-    box-sizing: border-box;
-}
-body {
-    margin: 0;
-}
-nav {
-    background: #333333;
-}
-ul {
-    list-style: none;
+body, html {
+    height: 100%;
+    width: 100%;
     padding: 0;
     margin: 0;
-    display: flex;
+    font-family: Arial, Ubuntu, sans-serif;
 }
-nav a {
-    text-decoration: none;
-    color: white;
-    font-family: Verdana;
-    display: inline-block;
+
+.message {
+    border: solid black 1px;
+    border-radius: 5px;
+    width: 30%;
+    padding: 5px;
+    margin: 0 0 10px 10px;
 }
-nav a:hover {
-    background: black;
+
+.message-error {
+    background-color: #ffc0cb;
+    color: mediumvioletred;
+}
+
+.message-warning {
+    background-color: #F5F9C2;
+    color: yellowgreen;
+}
+
+.message-success {
+    background-color: #B9F7D7;
+    color: #0fb784;
+}
+
+.message-info {
+    background-color: #B3CFFA;
+    color: blue;
 }
